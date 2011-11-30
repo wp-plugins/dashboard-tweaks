@@ -36,9 +36,9 @@ The plugin comes localized for use on sites other than the English language and/
 The Dashboard Tweaks plugin requires WordPress 3.3-beta4 or higher.
 
 1. Upload `dashboard-tweaks.zip` to the `/wp-content/plugins/` directory
-2a. Edit the files `dashboard-tweaks.php` and `/css/wp-admin.css` to your liking (link: `/wp-admin/plugin-editor.php?file=dashboard-tweaks/dashboard-tweaks.php`). See below what can be changed on which lines.
-2b. Alternatively you can unzip the file on your computer, do your edits and then upload the entire directory `dashboard-tweaks` to the `wp-content/plugins/` folder.
-3. Activate the plugin through the 'Plugins' menu in WordPress and enjoy your customized WordPress Dashboard!
+2. Edit the files `dashboard-tweaks.php` and `/css/wp-admin.css` to your liking (link: `/wp-admin/plugin-editor.php?file=dashboard-tweaks/dashboard-tweaks.php`). See below what can be changed on which lines.
+3. Alternatively you can unzip the file on your computer, do your edits and then upload the entire directory `dashboard-tweaks` to the `wp-content/plugins/` folder.
+4. Activate the plugin through the 'Plugins' menu in WordPress and enjoy your customized WordPress Dashboard!
 
 Change images for admin favicon and dashboard logo:<br />
 Use FTP to upload your own images, the admin favicon is called `dashboard.png` and the dashboard logo is called `adminbar-logo.png`; both files are located in the images folder of the dashboard-tweaks folder.
