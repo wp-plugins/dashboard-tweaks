@@ -4,7 +4,7 @@ Plugin Name: Dashboard Tweaks
 Plugin URI: http://wpti.ps/category/plugins/
 Description: A Collection of Tweaks (Functions & CSS) for WordPress version 3.3 and higher. Based on work by Siobhan (http://senl.in/u6kifV) 
 Author: Piet Bos
-Version: 1.0
+Version: 1.0.1
 Author URI: http://wpti.ps
 License: GPLv2
 */
@@ -56,13 +56,20 @@ function sl_dashboard_tweaks() {
 }
 add_action('admin_head', 'sl_dashboard_tweaks');
 
+/*
+	BELOW HERE YOU CAN EDIT AS YOU LIKE. You can for example take out more menus, add menus and/or change the texts.
+*/
+
 // Remove WordPress sub-menu from the admin bar, add custom admin logo instead and remove "Visit Site" sub-menu under site-name.
 function sl_dashboard_tweaks_render() {
 	global $wp_admin_bar;
 	$wp_admin_bar->add_menu( array(
 		'id'    => 'wp-logo',
-		'title' => '<span class="ab-wp-logo"></span>',
+		'title' => '<span class="sl-dashboard-logo"></span>',
 		'href'  => is_admin() ? home_url( '/' ) : admin_url(),
+		'meta'  => array(
+			'title' => __('Visit the Frontend of your website'),
+		),
 	) );
 	$wp_admin_bar->remove_menu('about');
 	$wp_admin_bar->remove_menu('wporg');

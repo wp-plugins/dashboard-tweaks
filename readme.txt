@@ -4,7 +4,7 @@ Donate link: http://senl.in/PPd0na
 Tags: dashboard, tweaks, admin bar, toolbar, menus, functions, styles
 Requires at least: 3.3-beta4
 Tested up to: 3.3
-Stable tag: 1.0
+Stable tag: 1.0.1
 
 A collection of Dashboard Tweaks that enables website developers to customize the WordPress Dashboard more towards their clients.
 
@@ -13,6 +13,8 @@ A collection of Dashboard Tweaks that enables website developers to customize th
 With the arrival of WordPress version 3.3 the WordPress Dashboard once again received an overhaul/makeover. The tweaks we have been using since 3.2 no longer cut it and that inspired me to develop this plugin for <strong>WordPress version 3.3 or higher</strong>.
 
 I have not included an options panel as this plugin is catered to developers and you are meant to play around with it. If you don't develop WordPress websites for clients, then most likely you won't have much use for this plugin and if you do, then be prepared to roll up your sleeves and get your hands dirty.
+
+If you try to install the plugin on any WordPress version lower than 3.3-beta4 it will die nicely and you will be taken back to the Dashboard.
 
 A list of the tweaks included in the Dashboard Tweaks plugin:<br />
 - change the WordPress logo in the top-left of the admin bar with a custom admin logo<br />
@@ -40,25 +42,27 @@ The Dashboard Tweaks plugin requires WordPress 3.3-beta4 or higher.
 3. Alternatively you can unzip the file on your computer, do your edits and then upload the entire directory `dashboard-tweaks` to the `wp-content/plugins/` folder.
 4. Activate the plugin through the 'Plugins' menu in WordPress and enjoy your customized WordPress Dashboard!
 
-Change images for admin favicon and dashboard logo:<br />
-Use FTP to upload your own images, the admin favicon is called `dashboard.png` and the dashboard logo is called `adminbar-logo.png`; both files are located in the images folder of the dashboard-tweaks folder.
+Change images for admin favicon and admin bar logo:<br />
+Use FTP to upload your own images, the admin favicon is called `dashboard.png` and the admin bar logo is called `adminbar-logo.png`; both files are located in the images folder of the dashboard-tweaks folder.
 
 Which lines of `dashboard-tweaks.php` can be edited?<br />
-lines 76-84: change Howdy to Welcome Back<br />
-lines 86-91: change tab title text<br/>
-lines 93-97: change custom footer text
+lines 63-81: change menus that are removed and/or the text that shows when hovering over the new admin bar logo
+line 88: If you want to change "Welcome Back" to something else<br />
+line 95: change tab title text<br/>
+line 102: change custom footer text
 
 Which lines of `/css/wp-admin.css` can be edited?<br />
-lines 10-11: hover background color for admin-bar-wp-logo<br />
-line 17: change page heading size<br />
-line 24: change colored background to activated plugins to add contrast<br />
-lines 27-28: change colored background to sidebar active sub-menu to add contrast
+lines 7,11: (hover) background color for admin bar logo<br />
+lines 16-17: opacity of admin bar logo in inactive and hover state
+line 23: change page heading size<br />
+line 30: change colored background to activated plugins to add contrast<br />
+lines 33-34: change colored background to sidebar active sub-menu to add contrast
 
 == Frequently Asked Questions ==
 
 = On the front-end the WordPress stuff in the admin bar is still visible! =
 
-Disable the admin bar for the user when viewing the site. Most clients want to see their own website, not that ugly admin bar.
+Disable the admin bar for the user when viewing the site. Most clients rather see their own website in its full glory instead of with that ugly admin bar at the top.
 
 = Are you planning to add an options panel? =
 
@@ -66,15 +70,23 @@ Maybe. I don't expect (frequent) updates will be necessary for this plugin, so b
 
 == Screenshots ==
 
-1. Dashboard after installation (This screen shot description corresponds to images/screenshot-1.jpg).
-2. Plugin screen after installation (This screen shot description corresponds to images/screenshot-2.jpg).
+1. Dashboard after installation.
+2. Plugin screen after installation.
 
 == Changelog ==
+
+= 1.0.1 =
+* Today WordPress version 3.3-RC1 was released and with it some functions in wp-includes/admin-bar.php. As it turned out the admin logo was no longer visible, hence this small update.
+* Added opacity on inactive and hover state of admin bar logo
+* Small edits in the readme.txt file
 
 = 1.0 =
 * First version (stable)
 
 == Upgrade Notice ==
+
+= 1.0.1 =
+Make sure to <strong>save your edits before updating</strong> the Dashboard Tweaks plugin, otherwise they will all be lost. Yeah, I know, options panel...
 
 = 1.0 =
 First release
