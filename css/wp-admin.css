@@ -8,12 +8,8 @@ CSS for the Dashboard Tweaks Plugin
 /* And keep the logo while hovering (changed in WordPress Version 3.3-RC1) */
 #wpadminbar .ab-top-menu > li#wp-admin-bar-wp-logo:hover > .ab-item, #wpadminbar .ab-top-menu > li#wp-admin-bar-wp-logo.hover > .ab-item, #wpadminbar .ab-top-menu > li#wp-admin-bar-wp-logo > .ab-item:focus {
     background-color: #464646;
-    background-image: url("../images/adminbar-logo.png");
+    background-image: url("../images/adminbar-logo.png") !important;
 }
-
-/* Lower the opacity of the logo in off state and bring it back to 1 in the hover state (changed in WordPress Version 3.3-RC1) */
-#wpadminbar ul li#wp-admin-bar-wp-logo {opacity:0.8;}
-#wpadminbar ul li#wp-admin-bar-wp-logo.hover {opacity:1;}
 
 /* Remove icons in front of Dashboard menus */
 .wp-admin .icon32 {display:none;}
