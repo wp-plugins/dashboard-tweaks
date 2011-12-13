@@ -2,9 +2,9 @@
 Contributors: senlin
 Donate link: http://senl.in/PPd0na
 Tags: dashboard, tweaks, admin bar, toolbar, menus, functions, styles
-Requires at least: 3.3-beta4
+Requires at least: 3.3
 Tested up to: 3.3
-Stable tag: 1.0.1
+Stable tag: 1.0.5
 
 A collection of Dashboard Tweaks that enables website developers to customize the WordPress Dashboard more towards their clients.
 
@@ -14,19 +14,20 @@ With the arrival of WordPress version 3.3 the WordPress Dashboard once again rec
 
 I have not included an options panel as this plugin is catered to developers and you are meant to play around with it. If you don't develop WordPress websites for clients, then most likely you won't have much use for this plugin and if you do, then be prepared to roll up your sleeves and get your hands dirty.
 
-If you try to install the plugin on any WordPress version lower than 3.3-beta4 it will die nicely and you will be taken back to the Dashboard.
+If you try to install the plugin on any WordPress version lower than 3.3 it will die nicely and you will be taken back to the Dashboard.
 
 A list of the tweaks included in the Dashboard Tweaks plugin:<br />
-- change the WordPress logo in the top-left of the admin bar with a custom admin logo<br />
+- change the WordPress logo in the top-left of the toolbar with a custom admin logo<br />
 - link that logo to the home URL instead of the new wp-admin/about.php<br />
-- remove the entire sub-menu with links to Codex, forums and what not<br />
-- remove the Visit Site sub-menu under the site's name<br />
+- hide the entire sub-menu with links to Codex, forums and what not<br />
+- hide the Visit Site sub-menu under the site's name<br />
+- hide the Comments balloon in the toolbar<br />
 - change "Howdy" into "Welcome back"<br />
 - add a special favicon for the Dashboard only (ideally different from the frontend, but up to you)<br />
 - change the tab title into a standard "Dashboard of [sitename]"<br />
-- remove icons in front of Dashboard menus<br />
+- hide icons in front of Dashboard menus<br />
 - reduce page heading size<br />
-- remove publish icon of Add new Post/Page screens<br />
+- hide publish icon of Add new Post/Page screens<br />
 - add colored background to sidebar active sub-menu to add contrast<br />
 - add colored background to activated plugins to add contrast<br />
 - add custom footer text
@@ -42,31 +43,30 @@ The Dashboard Tweaks plugin requires WordPress 3.3-beta4 or higher.
 3. Alternatively you can unzip the file on your computer, do your edits and then upload the entire directory `dashboard-tweaks` to the `wp-content/plugins/` folder.
 4. Activate the plugin through the 'Plugins' menu in WordPress and enjoy your customized WordPress Dashboard!
 
-Change images for admin favicon and admin bar logo:<br />
-Use FTP to upload your own images, the admin favicon is called `dashboard.png` and the admin bar logo is called `adminbar-logo.png`; both files are located in the images folder of the dashboard-tweaks folder.
+Change images for admin favicon and toolbar logo:<br />
+Use FTP to upload your own images, the admin favicon is called `dashboard.png` and the toolbar logo is called `adminbar-logo.png`; both files are located in the images folder of the dashboard-tweaks folder.
 
 Which lines of `dashboard-tweaks.php` can be edited?<br />
-lines 63-81: change menus that are removed and/or the text that shows when hovering over the new admin bar logo
-line 88: If you want to change "Welcome Back" to something else<br />
-line 95: change tab title text<br/>
-line 102: change custom footer text
+lines 63-81: change menus that are hidden and/or the text that shows when hovering over the new toolbar logo
+line 89: If you want to change "Welcome Back" to something else<br />
+line 96: change tab title text<br/>
+line 103: change custom footer text
 
 Which lines of `/css/wp-admin.css` can be edited?<br />
-lines 7,11: (hover) background color for admin bar logo<br />
-lines 16-17: opacity of admin bar logo in inactive and hover state
-line 23: change page heading size<br />
-line 30: change colored background to activated plugins to add contrast<br />
-lines 33-34: change colored background to sidebar active sub-menu to add contrast
+lines 6, 10-11: (hover) background color for toolbar logo<br />
+line 18: change page heading size<br />
+line 25: change colored background to activated plugins to add contrast<br />
+lines 28-29: change colored background to sidebar active sub-menu to add contrast
 
 == Frequently Asked Questions ==
 
-= On the front-end the WordPress stuff in the admin bar is still visible! =
+= On the front-end the WordPress stuff in the toolbar is still visible! =
 
-Disable the admin bar for the user when viewing the site. Most clients rather see their own website in its full glory instead of with that ugly admin bar at the top.
+Disable the toolbar for the user when viewing the site. Most clients rather see their own website in its full glory instead of with that ugly toolbar at the top.
 
 = Are you planning to add an options panel? =
 
-Maybe. I don't expect (frequent) updates will be necessary for this plugin, so basically your edits are protected.
+Yes. That will be the last "problematic" update where you have to edit your edits. You can definitely expect a working options panel for the next version!
 
 == Screenshots ==
 
@@ -75,15 +75,26 @@ Maybe. I don't expect (frequent) updates will be necessary for this plugin, so b
 
 == Changelog ==
 
+= 1.0.5 =
+* Today the final WordPress version 3.3 was released, so some small tweaks and updates were once again needed.
+* Edited the way the toolbar logo shows
+* Added the option to hide the comments as many websites don't have those enabled
+* Removed opacity on inactive and hover state of toolbar logo
+* Edits in readme.txt
+* Changed admin bar (or admin-bar or adminbar) wording throughout the plugin with the new "toolbar"
+
 = 1.0.1 =
 * Today WordPress version 3.3-RC1 was released and with it some functions in wp-includes/admin-bar.php. As it turned out the admin logo was no longer visible, hence this small update.
-* Added opacity on inactive and hover state of admin bar logo
+* Added opacity on inactive and hover state of toolbar logo
 * Small edits in the readme.txt file
 
 = 1.0 =
 * First version (stable)
 
 == Upgrade Notice ==
+
+= 1.0.5 =
+Make sure to <strong>save your edits before updating</strong> the Dashboard Tweaks plugin, otherwise they will all be lost. Yeah, I know, options panel...
 
 = 1.0.1 =
 Make sure to <strong>save your edits before updating</strong> the Dashboard Tweaks plugin, otherwise they will all be lost. Yeah, I know, options panel...
