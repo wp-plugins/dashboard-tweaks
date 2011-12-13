@@ -1,10 +1,10 @@
 <?php
 /*
 Plugin Name: Dashboard Tweaks
-Plugin URI: http://wpti.ps/category/plugins/
+Plugin URI: http://wpti.ps?p=150
 Description: A Collection of Tweaks (Functions & CSS) for WordPress version 3.3 and higher. Based on work by Siobhan (http://senl.in/u6kifV) 
 Author: Piet Bos
-Version: 1.0.1
+Version: 1.0.2
 Author URI: http://wpti.ps
 License: GPLv2
 */
@@ -32,13 +32,13 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 register_activation_hook( __FILE__, 'sl_dashboard_tweaks_install' );
 
-// If < WP 3.3-beta4 die nicely (source: http://www.presscoders.com/2011/11/deactivate-wordpress-plugin-automatically/)
+// If < WP 3.3 die nicely (source: http://www.presscoders.com/2011/11/deactivate-wordpress-plugin-automatically/)
 function sl_requires_wordpress_version() {
 	global $wp_version;
 	$plugin = plugin_basename( __FILE__ );
 	$plugin_data = get_plugin_data( __FILE__, false );
  
-	if ( version_compare($wp_version, "3.3-beta4", "<" ) ) {
+	if ( version_compare($wp_version, "3.3", "<" ) ) {
 		if( is_plugin_active($plugin) ) {
 			deactivate_plugins( $plugin );
 			wp_die( "'".$plugin_data['Name']."' requires WordPress 3.3 or higher! Deactivating Plugin.<br /><br />Back to <a href='".admin_url()."'>WordPress admin</a>." );
@@ -60,7 +60,7 @@ add_action('admin_head', 'sl_dashboard_tweaks');
 	BELOW HERE YOU CAN EDIT AS YOU LIKE. You can for example take out more menus, add menus and/or change the texts.
 */
 
-// Remove WordPress sub-menu from the admin bar, add custom admin logo instead and remove "Visit Site" sub-menu under site-name.
+// Remove WordPress sub-menu from the toolbar, add custom admin logo instead and remove "Visit Site" sub-menu under site-name.
 function sl_dashboard_tweaks_render() {
 	global $wp_admin_bar;
 	$wp_admin_bar->add_menu( array(
@@ -77,6 +77,7 @@ function sl_dashboard_tweaks_render() {
 	$wp_admin_bar->remove_menu('support-forums');
 	$wp_admin_bar->remove_menu('feedback');
 	$wp_admin_bar->remove_menu('view-site');
+	$wp_admin_bar->remove_menu('comments'); // optional, delete comments as many websites don't even have those enabled.
 }
 add_action( 'wp_before_admin_bar_render', 'sl_dashboard_tweaks_render' );
 
