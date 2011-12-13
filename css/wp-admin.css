@@ -2,7 +2,7 @@
 CSS for the Dashboard Tweaks Plugin
 */
 
-/* Replace WordPress logo top left corner adminbar with custom logo (maximum height of image: 28px) */
+/* Replace WordPress logo top left corner toolbar with custom logo (maximum height of image: 28px) */
 #wpadminbar ul li#wp-admin-bar-wp-logo {background: url("../images/adminbar-logo.png") no-repeat 0 0 #464646;width: 28px;height:28px;}
 
 /* And keep the logo while hovering (changed in WordPress Version 3.3-RC1) */
