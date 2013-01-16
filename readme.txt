@@ -3,8 +3,8 @@ Contributors: senlin
 Donate link: http://senl.in/PPd0na
 Tags: dashboard, tweaks, admin bar, toolbar, menus, functions, styles
 Requires at least: 3.3
-Tested up to: 3.4.1
-Stable tag: 1.0.7
+Tested up to: 3.5
+Stable tag: 1.0.8
 
 A collection of Dashboard Tweaks that enables website developers to customize the WordPress Dashboard more towards their clients.
 
@@ -74,6 +74,9 @@ Yes. That will be the last "problematic" update where you have to edit your edit
 2. Plugin screen after installation.
 
 == Changelog ==
+
+= 1.0.8 =
+* Changed version to show compatibility with WordPress release 3.5
 
 = 1.0.7 =
 * Changed version to show compatibility with WordPress release 3.4.1
