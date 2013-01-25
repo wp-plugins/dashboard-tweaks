@@ -3,16 +3,20 @@ Contributors: senlin
 Donate link: http://senl.in/PPd0na
 Tags: dashboard, tweaks, admin bar, toolbar, menus, functions, styles
 Requires at least: 3.3
-Tested up to: 3.5
-Stable tag: 1.0.8
+Tested up to: 3.3
+Stable tag: 1.0.9
 
 A collection of Dashboard Tweaks that enables website developers to customize the WordPress Dashboard more towards their clients.
 
 == Description ==
 
+<strong>As there are better alternatives to this plugin - also with option panels - I have decided to no further pursue its development.</strong>
+
+If someone is interested to take over the development, please contact me, so we can arrange that.
+
 With the arrival of WordPress version 3.3 the WordPress Dashboard once again received an overhaul/makeover. The tweaks we have been using since 3.2 no longer cut it and that inspired me to develop this plugin for <strong>WordPress version 3.3 or higher</strong>.
 
-I have not included an options panel as this plugin is catered to developers and you are meant to play around with it. If you don't develop WordPress websites for clients, then most likely you won't have much use for this plugin and if you do, then be prepared to roll up your sleeves and get your hands dirty.
+<strong>I have not included an options panel</strong> as this plugin is catered to developers and you are meant to play around with it. If you don't develop WordPress websites for clients, then most likely you won't have much use for this plugin and if you do, then be prepared to roll up your sleeves and get your hands dirty.
 
 If you try to install the plugin on any WordPress version lower than 3.3 it will die nicely and you will be taken back to the Dashboard.
 
@@ -75,6 +79,9 @@ Yes. That will be the last "problematic" update where you have to edit your edit
 
 == Changelog ==
 
+= 1.0.9 =
+* Plugin no longer in active development. If you want to take over the development, please let me know. Degraded compatibility.
+
 = 1.0.8 =
 * Changed version to show compatibility with WordPress release 3.5
 
@@ -101,6 +108,9 @@ Yes. That will be the last "problematic" update where you have to edit your edit
 * First version (stable)
 
 == Upgrade Notice ==
+
+= 1.0.9 =
+<strong>Plugin no longer in active development.</strong> If you want to take over the development, please let me know.
 
 = 1.0.5 =
 Make sure to <strong>save your edits before updating</strong> the Dashboard Tweaks plugin, otherwise they will all be lost. Yeah, I know, options panel...
