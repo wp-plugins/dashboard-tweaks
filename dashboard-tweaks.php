@@ -3,7 +3,7 @@
 Plugin Name: Dashboard Tweaks
 Plugin URI: http://wpti.ps?p=150
 Description: A Collection of Tweaks (Functions & CSS) for WordPress version 3.3 and higher. 
-Version: 1.0.8
+Version: 1.0.9
 Author: Piet Bos
 Author URI: http://wpti.ps
 License: GPLv2
