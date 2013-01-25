@@ -6,7 +6,7 @@ Requires at least: 3.3
 Tested up to: 3.3
 Stable tag: 1.0.9
 
-A collection of Dashboard Tweaks that enables website developers to customize the WordPress Dashboard more towards their clients.
+PLUGIN NO LONGER IN ACTIVE DEVELOPMENT! INSTALL AT OWN RISK!
 
 == Description ==
 
