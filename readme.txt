@@ -1,12 +1,12 @@
 === Dashboard Tweaks ===
 Contributors: senlin
 Donate link: http://senl.in/PPd0na
-Tags: dashboard, tweaks, admin bar, toolbar, menus, functions, styles
+Tags: adopt-me, dashboard, tweaks, admin bar, toolbar, menus, functions, styles
 Requires at least: 3.3
 Tested up to: 3.3
 Stable tag: 1.0.9
 
-PLUGIN NO LONGER IN ACTIVE DEVELOPMENT! INSTALL AT OWN RISK!
+[ADOPT-ME] PLUGIN NO LONGER IN ACTIVE DEVELOPMENT! INSTALL AT OWN RISK!
 
 == Description ==
 
@@ -78,6 +78,8 @@ Yes. That will be the last "problematic" update where you have to edit your edit
 2. Plugin screen after installation.
 
 == Changelog ==
+
+ADOPT ME
 
 = 1.0.9 =
 * Plugin no longer in active development. If you want to take over the development, please let me know. Degraded compatibility.
